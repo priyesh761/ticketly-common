@@ -1,6 +1,6 @@
 {
   "name": "@ticketly/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
@@ -9,8 +9,7 @@
   "scripts": {
     "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc",
-    "prepublishOnly": "npm --no-git-tag-version version patch && git commit -a --amend --no-edit && npm run build",
-    "publish": "npm publish --access public"
+    "publish": "npm --no-git-tag-version version patch && git commit -a --amend --no-edit && npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "Priyesh Shetty",
